@@ -289,7 +289,6 @@ config.before :each, :js do
     'use.typekit.net',
     'f.vimeocdn.com',
     'player.vimeo.com',
-    'www.googletagmanager.com'
   ].flat_map { |domain| [ "http://#{domain}", "https://#{domain}" ] }
 end
 ```

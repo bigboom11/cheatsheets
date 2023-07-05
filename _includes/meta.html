@@ -66,17 +66,6 @@
 {% endfor %}
 {% endif %}
 
-{% if site.data.google_analytics.enabled %}
-<script async src='https://www.googletagmanager.com/gtag/js?id={{ site.data.google_analytics.id }}'></script>
-<script>
-{% comment %} if(~location.hostname.indexOf('{{site.data.google_analytics.hostname}}')){ {% endcomment %}
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments)};
-gtag('js',new Date());
-gtag('config','{{ site.data.google_analytics.id }}');
-</script>
-{% endif %}
-
 {% if depth %}
   <meta property='page:depth' content='{{depth}}'>
 {% endif %}
